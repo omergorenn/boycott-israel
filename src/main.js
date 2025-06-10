@@ -6,6 +6,24 @@ let filteredApps = [];
 
 // Load apps data with fallback to localStorage
 async function loadAppsData() {
+    // Show loading state in table
+    const tableBody = document.getElementById('apps-table-body');
+    if (tableBody) {
+        tableBody.innerHTML = `
+            <tr>
+                <td colspan="5" class="px-6 py-8 text-center text-gray-500">
+                    <div class="flex items-center justify-center">
+                        <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        Veriler yükleniyor...
+                    </div>
+                </td>
+            </tr>
+        `;
+    }
+
     try {
         console.log('Starting data load...');
         
@@ -52,27 +70,34 @@ async function loadAppsData() {
         
         console.log('Total combined data:', combinedData.length);
         
-        // Remove loading message if it exists
-        const loadingMessage = document.querySelector('.loading-message');
-        if (loadingMessage) {
-            loadingMessage.remove();
-        }
-        
-        renderTable(filteredApps);
-        setupEventListeners();
-    } catch (error) {
-        console.error('Error loading data:', error);
-        const tableBody = document.getElementById('apps-table-body') || document.getElementById('apps-table');
-        if (tableBody) {
-            if (tableBody.tagName === 'TBODY') {
+        // Clear loading state and show data
+        if (combinedData.length > 0) {
+            renderTable(filteredApps);
+            setupEventListeners();
+        } else {
+            // Show empty state
+            if (tableBody) {
                 tableBody.innerHTML = `
                     <tr>
-                        <td colspan="5" class="px-6 py-4 text-center text-red-600">
-                            Veri yüklenirken hata oluştu: ${error.message}
+                        <td colspan="5" class="px-6 py-8 text-center text-gray-500">
+                            Henüz veri bulunamadı. Lütfen admin panelinden veri ekleyin.
                         </td>
                     </tr>
                 `;
             }
+        }
+        
+    } catch (error) {
+        console.error('Error loading data:', error);
+        const tableBody = document.getElementById('apps-table-body');
+        if (tableBody) {
+            tableBody.innerHTML = `
+                <tr>
+                    <td colspan="5" class="px-6 py-4 text-center text-red-600">
+                        Veri yüklenirken hata oluştu: ${error.message}
+                    </td>
+                </tr>
+            `;
         }
     }
 }

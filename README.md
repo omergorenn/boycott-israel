@@ -1,118 +1,77 @@
-# 🇵🇸 Boykot İsrail - Alternatif Uygulamalar
+# 🇵🇸 Boykot İsrail - Boycott Israel Platform
 
-Bu proje, İsrail menşeli ürün ve hizmetlere alternatifler sunarak bilinçli tüketimi desteklemek amacıyla geliştirilmiştir.
+A modern web platform to raise awareness about Israeli-origin applications and provide alternative recommendations for conscious consumption.
 
-## 🌟 Özellikler
+## 🌟 Features
 
-- **3 Sayfalı Modern Web Sitesi**: Ana sayfa, uygulamalar listesi ve öneri gönderme formu
-- **Arama ve Filtreleme**: Kategori, kullanım durumu ve arama ile kolay navigasyon
-- **Mobil Uyumlu Tasarım**: Tüm cihazlarda mükemmel görünüm
-- **Topluluk Katkısı**: Kullanıcıların yeni öneriler gönderebilmesi
-- **Modern UI/UX**: Tailwind CSS ile profesyonel tasarım
+- **Comprehensive Database**: Apps and websites with Israeli origins
+- **Turkish Alternatives**: Local and international alternatives for each item
+- **Admin Panel**: Easy content management and data validation
+- **Modern UI**: Responsive design with Tailwind CSS
+- **Real-time Filtering**: Category, usage, and search-based filtering
 
-## 🛠️ Teknolojiler
+## 🚀 Deployment with Dokploy
 
-- **Frontend**: Vite + Vanilla JavaScript
-- **Styling**: Tailwind CSS
-- **Data**: JSON tabanlı veri yönetimi
-- **Deployment**: Dokploy uyumlu
+### For Static Deployment:
 
-## 🚀 Kurulum ve Çalıştırma
+1. **Build the project**: The `dist/` folder contains all production files
+2. **Upload to Dokploy**: Create a zip file with the `dist/` folder contents
+3. **Static Site**: Configure as a static site in Dokploy
 
-### 1. Bağımlılıkları Yükle
+### Build Commands:
 ```bash
 npm install
-```
-
-### 2. Geliştirme Sunucusunu Başlat
-```bash
-npm run dev
-```
-
-### 3. Production Build
-```bash
 npm run build
 ```
 
-### 4. Preview
+### Output Directory: `dist/`
+
+## 📁 Project Structure
+
+```
+dist/
+├── index.html          # Landing page
+├── apps.html           # Apps listing page
+├── submit.html         # Suggestion form
+├── admin.html          # Admin panel
+├── data/
+│   ├── apps.json      # Apps database
+│   └── sites.json     # Websites database
+└── assets/            # Compiled CSS/JS
+```
+
+## 🛠️ Local Development
+
 ```bash
-npm run preview
+npm install
+npm run dev
 ```
 
-## 📁 Proje Yapısı
+Visit `http://localhost:5173`
 
-```
-boycott-israel/
-├── index.html              # Ana sayfa
-├── apps.html               # Uygulamalar listesi
-├── submit.html             # Öneri gönderme formu
-├── package.json            # Proje konfigürasyonu
-├── vite.config.js          # Vite konfigürasyonu
-├── tailwind.config.js      # Tailwind konfigürasyonu
-├── postcss.config.js       # PostCSS konfigürasyonu
-├── src/
-│   ├── main.js            # Ana JavaScript dosyası
-│   └── style.css          # Ana CSS dosyası
-└── data/
-    └── apps.json          # Uygulamalar verisi
-```
+## 📊 Admin Panel
 
-## 🌐 Sayfalar
+Access the admin panel at `/admin.html` to:
+- Add new apps/websites/brands
+- Validate data integrity
+- Export/import data
+- Generate backups
 
-1. **Ana Sayfa (index.html)**: Hero section, özellikler ve çağrı-eylem bölümleri
-2. **Uygulamalar (apps.html)**: Filtrelenebilir uygulama listesi
-3. **Öneri Gönder (submit.html)**: Yeni uygulama önerme formu
+## 🔧 Tech Stack
 
-## 📊 Veri Yapısı
+- **Frontend**: Vanilla JavaScript, HTML, CSS
+- **Styling**: Tailwind CSS
+- **Build Tool**: Vite
+- **Data**: JSON files (can be easily migrated to database)
 
-Uygulamalar `data/apps.json` dosyasında şu formatta saklanır:
+## 📝 Contributing
 
-```json
-{
-  "name": "Uygulama Adı",
-  "category": "Kategori",
-  "usedInTR": true/false,
-  "alternative": "Alternatif uygulamalar",
-  "reason": "İsrail bağlantısının açıklaması"
-}
-```
+1. Use the suggestion form at `/submit.html`
+2. Access admin panel for direct content management
+3. Submit pull requests for code improvements
 
-## 🚀 Dokploy ile Deployment
+## 🎯 Purpose
 
-1. Bu repository'yi fork edin veya kopyalayın
-2. Dokploy dashboard'unuzda yeni bir proje oluşturun
-3. Repository URL'nizi ekleyin
-4. Build command: `npm run build`
-5. Output directory: `dist`
-6. Deploy edin!
+This platform supports the Palestinian cause by promoting conscious consumption and providing alternatives to Israeli-origin products and services.
 
-## 🔧 Özelleştirme
-
-### Yeni Uygulama Ekleme
-`data/apps.json` dosyasını düzenleyerek yeni uygulamalar ekleyebilirsiniz.
-
-### Stil Değişiklikleri
-`tailwind.config.js` ve `src/style.css` dosyalarını düzenleyerek tasarımı özelleştirebilirsiniz.
-
-### Form Entegrasyonu
-`src/main.js` dosyasındaki form handler'ı güncelleyerek Formspree, Netlify Forms veya başka bir servis ile entegre edebilirsiniz.
-
-## 🤝 Katkıda Bulunma
-
-1. Repository'yi fork edin
-2. Yeni bir branch oluşturun (`git checkout -b feature/yeni-ozellik`)
-3. Değişikliklerinizi commit edin (`git commit -am 'Yeni özellik eklendi'`)
-4. Branch'inizi push edin (`git push origin feature/yeni-ozellik`)
-5. Pull Request oluşturun
-
-## 📝 Lisans
-
-Bu proje açık kaynak kodlu olarak geliştirilmiştir. Özgürce kullanabilir, değiştirebilir ve dağıtabilirsiniz.
-
-## 🎯 Amaç
-
-Bu platform, Filistin davasına destek olmak ve bilinçli tüketimi teşvik etmek amacıyla oluşturulmuştur. Amacımız, insanların alternatif ürünler hakkında bilgi sahibi olmasını sağlamaktır.
-
-## 🇵🇸 Özgür Filistin İçin
-
-*"Adaletsizlik karşısında sessiz kalmak, zulmeden tarafı seçmektir."* 
+**🇵�� Free Palestine** 

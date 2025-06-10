@@ -1,0 +1,136 @@
+[
+    {
+      "name": "Waze",
+      "category": "Navigation",
+      "usedInTR": true,
+      "alternative": "Yandex Navigasyon, Google Maps",
+      "reason": "Israeli-owned navigation app"
+    },
+    {
+      "name": "Viber",
+      "category": "Communication",
+      "usedInTR": true,
+      "alternative": "WhatsApp, Telegram, Signal",
+      "reason": "Israeli-owned messaging app"
+    },
+    {
+      "name": "Fiverr",
+      "category": "Freelancing",
+      "usedInTR": true,
+      "alternative": "Upwork, Freelancer, Armut",
+      "reason": "Israeli-founded freelancing platform"
+    },
+    {
+      "name": "Gett",
+      "category": "Transportation",
+      "usedInTR": false,
+      "alternative": "Uber, BiTaksi, Taksim",
+      "reason": "Israeli ride-hailing app"
+    },
+    {
+      "name": "Lightricks",
+      "category": "Photo Editing",
+      "usedInTR": true,
+      "alternative": "Adobe Photoshop, Canva, VSCO",
+      "reason": "Israeli photo editing app company"
+    },
+    {
+      "name": "Outbrain",
+      "category": "Advertising",
+      "usedInTR": false,
+      "alternative": "Google Ads, Facebook Ads",
+      "reason": "Israeli content recommendation platform"
+    },
+    {
+      "name": "Taboola",
+      "category": "Advertising",
+      "usedInTR": false,
+      "alternative": "Google Ads, Facebook Ads",
+      "reason": "Israeli content discovery platform"
+    },
+    {
+      "name": "Checkmarx",
+      "category": "Software Security",
+      "usedInTR": false,
+      "alternative": "SonarQube, Veracode",
+      "reason": "Israeli application security testing platform"
+    },
+    {
+      "name": "Similarweb",
+      "category": "Analytics",
+      "usedInTR": false,
+      "alternative": "Google Analytics, Ahrefs",
+      "reason": "Israeli web analytics platform"
+    },
+    {
+      "name": "Riskified",
+      "category": "E-commerce",
+      "usedInTR": false,
+      "alternative": "Stripe Radar, PayPal",
+      "reason": "Israeli fraud prevention platform"
+    },
+    {
+      "name": "Check Point",
+      "category": "Cybersecurity",
+      "usedInTR": true,
+      "alternative": "Fortinet, Palo Alto Networks",
+      "reason": "Israeli network security software with presence in Turkish government systems"
+    },
+    {
+      "name": "CyberArk",
+      "category": "Cybersecurity",
+      "usedInTR": true,
+      "alternative": "BeyondTrust, Thycotic",
+      "reason": "Israeli privileged access management used in Turkish banks and telcos"
+    },
+    {
+      "name": "Radware",
+      "category": "Cybersecurity",
+      "usedInTR": true,
+      "alternative": "Cloudflare, F5 Networks",
+      "reason": "Israeli DDoS protection and load balancing used in Turkish banks"
+    },
+    {
+      "name": "NSO Group (Pegasus)",
+      "category": "Spyware",
+      "usedInTR": true,
+      "alternative": "None (proprietary spyware)",
+      "reason": "Israeli government spyware reportedly used by Turkish authorities"
+    },
+    {
+      "name": "Cellebrite",
+      "category": "Digital Forensics",
+      "usedInTR": true,
+      "alternative": "Magnet AXIOM, Oxygen Forensics",
+      "reason": "Israeli phone forensics tools used by Turkish law enforcement"
+    },
+    {
+      "name": "Cognyte",
+      "category": "Intelligence Analytics",
+      "usedInTR": true,
+      "alternative": "Palantir, IBM i2 Analyst's Notebook",
+      "reason": "Israeli intelligence analytics platform likely used for surveillance"
+    },
+    {
+      "name": "Monday.com",
+      "category": "Work Management",
+      "usedInTR": true,
+      "alternative": "Trello, Asana, ClickUp",
+      "reason": "Israeli SaaS platform widely used by Turkish businesses"
+    },
+    {
+      "name": "NICE Ltd.",
+      "category": "Enterprise Software",
+      "usedInTR": true,
+      "alternative": "Verint, Genesys",
+      "reason": "Israeli analytics and compliance tools used in Turkish banking/call centers"
+    },
+    {
+      "name": "Sisense",
+      "category": "Business Intelligence",
+      "usedInTR": true,
+      "alternative": "Power BI, Tableau",
+      "reason": "Israeli BI platform used in analytics, potentially by Turkish firms"
+    }
+  ]
+  

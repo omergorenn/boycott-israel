@@ -6,8 +6,6 @@ let currentType = '';
 // Load all data
 async function loadAllData() {
     try {
-        updateRecentActivity('Veriler yükleniyor...');
-        
         const [appsResponse, sitesResponse] = await Promise.all([
             fetch('/data/apps.json'),
             fetch('/data/sites.json')
@@ -31,9 +29,6 @@ async function loadAllData() {
     } catch (error) {
         console.error('Error loading data:', error);
         updateRecentActivity(`Veri yükleme hatası: ${error.message}`);
-        
-        // Show error to user
-        alert(`Veri yükleme hatası: ${error.message}`);
         
         // Initialize with empty arrays to prevent further errors
         appsData = [];
