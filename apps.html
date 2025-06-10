@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uygulamalar - Boykot İsrail</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-xl font-bold text-gray-900">🇵🇸 Boykot İsrail</h1>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-500 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Ana Sayfa</a>
+                    <a href="apps.html" class="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Uygulamalar</a>
+                    <a href="submit.html" class="text-gray-500 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Öneri Gönder</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="bg-white shadow">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-bold text-gray-900">İsrail Menşeli Uygulamalar ve Alternatifleri</h1>
+            <p class="mt-2 text-gray-600">Bilinçli tercihler yapmanız için kapsamlı liste ve alternatifler</p>
+        </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-lg shadow p-6 mb-6">
+            <h2 class="text-lg font-medium text-gray-900 mb-4">Filtreler</h2>
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+                <!-- Search -->
+                <div>
+                    <label for="search-input" class="block text-sm font-medium text-gray-700 mb-2">Arama</label>
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        placeholder="Uygulama adı, alternatif veya açıklama ara..."
+                        class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm"
+                    >
+                </div>
+                
+                <!-- Category Filter -->
+                <div>
+                    <label for="category-filter" class="block text-sm font-medium text-gray-700 mb-2">Kategori</label>
+                    <select id="category-filter" class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm">
+                        <option value="all">Tüm Kategoriler</option>
+                        <option value="Navigation">Navigasyon</option>
+                        <option value="Communication">İletişim</option>
+                        <option value="Freelancing">Freelancing</option>
+                        <option value="Transportation">Ulaşım</option>
+                        <option value="Photo Editing">Fotoğraf Düzenleme</option>
+                        <option value="Advertising">Reklamcılık</option>
+                        <option value="Software Security">Yazılım Güvenliği</option>
+                        <option value="Analytics">Analitik</option>
+                        <option value="E-commerce">E-ticaret</option>
+                    </select>
+                </div>
+                
+                <!-- Usage Filter -->
+                <div>
+                    <label for="usage-filter" class="block text-sm font-medium text-gray-700 mb-2">Türkiye'de Kullanım</label>
+                    <select id="usage-filter" class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm">
+                        <option value="all">Tümü</option>
+                        <option value="used">Yaygın Kullanılan</option>
+                        <option value="unused">Nadir Kullanılan</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Apps Table -->
+        <div class="bg-white shadow overflow-hidden sm:rounded-md">
+            <div class="px-4 py-5 sm:px-6">
+                <h3 class="text-lg leading-6 font-medium text-gray-900">Uygulama Listesi</h3>
+                <p class="mt-1 max-w-2xl text-sm text-gray-500">İsrail menşeli uygulamalar ve önerilen alternatifleri</p>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                Uygulama Adı
+                            </th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                Kategori
+                            </th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                TR'de Kullanım
+                            </th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                Alternatifler
+                            </th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                Açıklama
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="apps-table-body" class="bg-white divide-y divide-gray-200">
+                        <!-- Apps will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Loading State -->
+        <div id="loading" class="text-center py-8">
+            <div class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-gray-500 bg-white">
+                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Veriler yükleniyor...
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="mt-8 bg-blue-50 border border-blue-200 rounded-md p-4">
+            <div class="flex">
+                <div class="flex-shrink-0">
+                    <svg class="h-5 w-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <div class="ml-3">
+                    <h3 class="text-sm font-medium text-blue-800">Bilgi</h3>
+                    <div class="mt-2 text-sm text-blue-700">
+                        <p>Bu liste sürekli güncellenmektedir. Yeni uygulamalar veya güncellemeler için <a href="submit.html" class="underline">öneri gönder</a> sayfasını kullanabilirsiniz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-12">
+        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-500 text-sm">
+                    Bu platform, bilinçli tüketim ve Filistin davasına destek amacıyla oluşturulmuştur.
+                </p>
+                <p class="text-gray-400 text-xs mt-2">
+                    🇵🇸 Özgür Filistin için
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html> 

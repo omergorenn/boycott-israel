@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öneri Gönder - Boykot İsrail</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-xl font-bold text-gray-900">🇵🇸 Boykot İsrail</h1>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-500 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Ana Sayfa</a>
+                    <a href="apps.html" class="text-gray-500 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Uygulamalar</a>
+                    <a href="submit.html" class="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Öneri Gönder</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="bg-white shadow">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-bold text-gray-900">Yeni Uygulama Önerisi Gönder</h1>
+            <p class="mt-2 text-gray-600">Listeye eklenmesi gereken bir uygulama mı buldunuz? Bize bildirin!</p>
+        </div>
+    </div>
+
+    <!-- Form Section -->
+    <div class="max-w-3xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+        <div class="bg-white shadow rounded-lg">
+            <div class="px-4 py-5 sm:p-6">
+                <h3 class="text-lg leading-6 font-medium text-gray-900 mb-4">Uygulama Bilgileri</h3>
+                
+                <form id="submit-form" class="space-y-6">
+                    <!-- App Name -->
+                    <div>
+                        <label for="app-name" class="block text-sm font-medium text-gray-700">
+                            Uygulama Adı <span class="text-red-500">*</span>
+                        </label>
+                        <input 
+                            type="text" 
+                            name="app-name" 
+                            id="app-name" 
+                            required
+                            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm"
+                            placeholder="Örn: Waze, Viber, Fiverr"
+                        >
+                    </div>
+
+                    <!-- Category -->
+                    <div>
+                        <label for="category" class="block text-sm font-medium text-gray-700">
+                            Kategori <span class="text-red-500">*</span>
+                        </label>
+                        <select 
+                            name="category" 
+                            id="category" 
+                            required
+                            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm"
+                        >
+                            <option value="">Kategori Seçin</option>
+                            <option value="Navigation">Navigasyon</option>
+                            <option value="Communication">İletişim</option>
+                            <option value="Freelancing">Freelancing</option>
+                            <option value="Transportation">Ulaşım</option>
+                            <option value="Photo Editing">Fotoğraf Düzenleme</option>
+                            <option value="Advertising">Reklamcılık</option>
+                            <option value="Software Security">Yazılım Güvenliği</option>
+                            <option value="Analytics">Analitik</option>
+                            <option value="E-commerce">E-ticaret</option>
+                            <option value="Social Media">Sosyal Medya</option>
+                            <option value="Entertainment">Eğlence</option>
+                            <option value="Education">Eğitim</option>
+                            <option value="Other">Diğer</option>
+                        </select>
+                    </div>
+
+                    <!-- Usage in Turkey -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-3">
+                            Türkiye'de ne kadar yaygın kullanılıyor? <span class="text-red-500">*</span>
+                        </label>
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <input 
+                                    id="usage-common" 
+                                    name="usage" 
+                                    type="radio" 
+                                    value="true" 
+                                    required
+                                    class="focus:ring-red-500 h-4 w-4 text-red-600 border-gray-300"
+                                >
+                                <label for="usage-common" class="ml-3 block text-sm text-gray-700">
+                                    Yaygın kullanılıyor
+                                </label>
+                            </div>
+                            <div class="flex items-center">
+                                <input 
+                                    id="usage-rare" 
+                                    name="usage" 
+                                    type="radio" 
+                                    value="false" 
+                                    required
+                                    class="focus:ring-red-500 h-4 w-4 text-red-600 border-gray-300"
+                                >
+                                <label for="usage-rare" class="ml-3 block text-sm text-gray-700">
+                                    Nadir kullanılıyor veya bilinmiyor
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Alternatives -->
+                    <div>
+                        <label for="alternatives" class="block text-sm font-medium text-gray-700">
+                            Önerilen Alternatifler <span class="text-red-500">*</span>
+                        </label>
+                        <textarea 
+                            name="alternatives" 
+                            id="alternatives" 
+                            rows="3" 
+                            required
+                            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm"
+                            placeholder="Örn: Google Maps, Yandex Navigasyon, Apple Maps"
+                        ></textarea>
+                        <p class="mt-2 text-sm text-gray-500">
+                            Alternatif uygulamaları virgülle ayırarak yazın
+                        </p>
+                    </div>
+
+                    <!-- Reason -->
+                    <div>
+                        <label for="reason" class="block text-sm font-medium text-gray-700">
+                            İsrail bağlantısının açıklaması <span class="text-red-500">*</span>
+                        </label>
+                        <textarea 
+                            name="reason" 
+                            id="reason" 
+                            rows="3" 
+                            required
+                            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm"
+                            placeholder="Örn: İsrail menşeli şirket tarafından geliştirildi ve sahiplenildi"
+                        ></textarea>
+                        <p class="mt-2 text-sm text-gray-500">
+                            Uygulamanın İsrail ile bağlantısını kısaca açıklayın
+                        </p>
+                    </div>
+
+                    <!-- Additional Info -->
+                    <div>
+                        <label for="additional-info" class="block text-sm font-medium text-gray-700">
+                            Ek Bilgiler (Opsiyonel)
+                        </label>
+                        <textarea 
+                            name="additional-info" 
+                            id="additional-info" 
+                            rows="3" 
+                            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm"
+                            placeholder="Varsa ek detaylar, kaynaklar veya notlarınızı paylaşın"
+                        ></textarea>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div>
+                        <label for="contact" class="block text-sm font-medium text-gray-700">
+                            İletişim (Opsiyonel)
+                        </label>
+                        <input 
+                            type="email" 
+                            name="contact" 
+                            id="contact" 
+                            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm"
+                            placeholder="E-posta adresiniz (gerekirse size dönüş yapabilmek için)"
+                        >
+                        <p class="mt-2 text-sm text-gray-500">
+                            E-posta adresiniz gizli tutulacak ve sadece gerekli durumlarda iletişim için kullanılacaktır
+                        </p>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="pt-4">
+                        <button 
+                            type="submit" 
+                            class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                        >
+                            Önerinizi Gönderin
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Success Message -->
+                <div id="success-message" class="hidden mt-4 bg-green-50 border border-green-200 rounded-md p-4">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <svg class="h-5 w-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-3">
+                            <h3 class="text-sm font-medium text-green-800">Başarıyla gönderildi!</h3>
+                            <div class="mt-2 text-sm text-green-700">
+                                <p>Öneriniz için teşekkür ederiz. Gönderdiğiniz bilgiler incelendikten sonra listeye eklenecektir.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Cards -->
+        <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            <!-- Guidelines Card -->
+            <div class="bg-blue-50 border border-blue-200 rounded-md p-6">
+                <h3 class="text-lg font-medium text-blue-900 mb-3">Öneri Gönderirken Dikkat Edilecekler</h3>
+                <ul class="text-sm text-blue-800 space-y-2">
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>
+                        Uygulama gerçekten İsrail menşeli olmalı
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>
+                        Mümkünse kaynak veya referans belirtin
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>
+                        Alternatifler işlevsel olarak benzer olmalı
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>
+                        Doğru kategori seçmeye özen gösterin
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Card -->
+            <div class="bg-green-50 border border-green-200 rounded-md p-6">
+                <h3 class="text-lg font-medium text-green-900 mb-3">İletişim</h3>
+                <div class="text-sm text-green-800 space-y-2">
+                    <p>Bu platform topluluk katkısıyla büyümektedir.</p>
+                    <p>Önerileriniz ve geri bildirimleriniz çok değerlidir.</p>
+                    <p class="font-medium">🇵🇸 Birlikte daha güçlüyüz!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-12">
+        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-500 text-sm">
+                    Bu platform, bilinçli tüketim ve Filistin davasına destek amacıyla oluşturulmuştur.
+                </p>
+                <p class="text-gray-400 text-xs mt-2">
+                    🇵🇸 Özgür Filistin için
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html> 
