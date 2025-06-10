@@ -1,63 +1,62 @@
 [
-    {
-      "name": "JDate",
-      "type": "website",
-      "category": "Dating",
-      "url": "jdate.com",
-      "usedInTR": false,
-      "alternative": "Badoo, Tinder, Bumble, eHarmony",
-      "reason": "Israeli-owned Jewish dating website",
-      "description": "Online dating platform primarily for Jewish singles",
-      "verificationStatus": "verified",
-      "sources": ["Wikipedia", "Company About Page"]
-    },
-    {
-      "name": "WIX",
-      "type": "website",
-      "category": "Web Development",
-      "url": "wix.com",
-      "usedInTR": true,
-      "alternative": "WordPress, Squarespace, Webflow, Elementor",
-      "reason": "Israeli web development platform",
-      "description": "Website builder and hosting platform",
-      "verificationStatus": "verified",
-      "sources": ["Company registration", "News articles"]
-    },
-    {
-      "name": "Fiverr",
-      "type": "website",
-      "category": "Freelancing",
-      "url": "fiverr.com",
-      "usedInTR": true,
-      "alternative": "Upwork, Freelancer, 99designs, Armut",
-      "reason": "Israeli-founded online marketplace for freelance services",
-      "description": "Freelance services marketplace",
-      "verificationStatus": "verified",
-      "sources": ["Company information", "Founder background"]
-    },
-    {
-      "name": "Natural Intelligence",
-      "type": "website",
-      "category": "Comparison Shopping",
-      "url": "naturalint.com",
-      "usedInTR": false,
-      "alternative": "PriceGrabber, Shopping.com, Google Shopping",
-      "reason": "Israeli comparison shopping company",
-      "description": "Operates various price comparison and review websites",
-      "verificationStatus": "verified",
-      "sources": ["Company profile"]
-    },
-    {
-      "name": "ironSource",
-      "type": "platform",
-      "category": "Mobile Marketing",
-      "url": "ironsrc.com",
-      "usedInTR": false,
-      "alternative": "Google AdMob, Unity Ads, AppLovin",
-      "reason": "Israeli mobile monetization and marketing platform",
-      "description": "Mobile app monetization and marketing solutions",
-      "verificationStatus": "verified",
-      "sources": ["Company information"]
-    }
-  ]
-  
+  {
+    "name": "JDate",
+    "type": "website",
+    "category": "Dating",
+    "url": "jdate.com",
+    "usedInTR": false,
+    "alternative": "Badoo, Tinder, Bumble, eHarmony",
+    "reason": "Israeli-owned Jewish dating website",
+    "description": "Online dating platform primarily for Jewish singles",
+    "verificationStatus": "verified",
+    "sources": ["Wikipedia", "Company About Page"]
+  },
+  {
+    "name": "WIX",
+    "type": "website",
+    "category": "Web Development",
+    "url": "wix.com",
+    "usedInTR": true,
+    "alternative": "WordPress, Squarespace, Webflow, Elementor",
+    "reason": "Israeli web development platform",
+    "description": "Website builder and hosting platform",
+    "verificationStatus": "verified",
+    "sources": ["Company registration", "News articles"]
+  },
+  {
+    "name": "Fiverr",
+    "type": "website",
+    "category": "Freelancing",
+    "url": "fiverr.com",
+    "usedInTR": true,
+    "alternative": "Upwork, Freelancer, 99designs, Armut",
+    "reason": "Israeli-founded online marketplace for freelance services",
+    "description": "Freelance services marketplace",
+    "verificationStatus": "verified",
+    "sources": ["Company information", "Founder background"]
+  },
+  {
+    "name": "Natural Intelligence",
+    "type": "website",
+    "category": "Comparison Shopping",
+    "url": "naturalint.com",
+    "usedInTR": false,
+    "alternative": "PriceGrabber, Shopping.com, Google Shopping",
+    "reason": "Israeli comparison shopping company",
+    "description": "Operates various price comparison and review websites",
+    "verificationStatus": "verified",
+    "sources": ["Company profile"]
+  },
+  {
+    "name": "ironSource",
+    "type": "platform",
+    "category": "Mobile Marketing",
+    "url": "ironsrc.com",
+    "usedInTR": false,
+    "alternative": "Google AdMob, Unity Ads, AppLovin",
+    "reason": "Israeli mobile monetization and marketing platform",
+    "description": "Mobile app monetization and marketing solutions",
+    "verificationStatus": "verified",
+    "sources": ["Company information"]
+  }
+]
