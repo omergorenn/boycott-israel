@@ -2,61 +2,61 @@
   {
     "name": "JDate",
     "type": "website",
-    "category": "Dating",
+    "category": "Arkadaşlık",
     "url": "jdate.com",
     "usedInTR": false,
     "alternative": "Badoo, Tinder, Bumble, eHarmony",
-    "reason": "Israeli-owned Jewish dating website",
-    "description": "Online dating platform primarily for Jewish singles",
-    "verificationStatus": "verified",
-    "sources": ["Wikipedia", "Company About Page"]
+    "reason": "İsrail menşeli Yahudilere özel arkadaşlık platformu",
+    "description": "Özellikle Yahudi bireyler için çevrim içi arkadaşlık sitesi",
+    "verificationStatus": "doğrulandı",
+    "sources": ["Wikipedia", "Şirket Hakkında Sayfası"]
   },
   {
     "name": "WIX",
     "type": "website",
-    "category": "Web Development",
+    "category": "Web Geliştirme",
     "url": "wix.com",
     "usedInTR": true,
     "alternative": "WordPress, Squarespace, Webflow, Elementor",
-    "reason": "Israeli web development platform",
-    "description": "Website builder and hosting platform",
-    "verificationStatus": "verified",
-    "sources": ["Company registration", "News articles"]
+    "reason": "İsrail menşeli web sitesi oluşturma platformu",
+    "description": "Kullanıcıların kod bilmeden web sitesi oluşturmasına olanak tanıyan platform",
+    "verificationStatus": "doğrulandı",
+    "sources": ["Şirket kaydı", "Haber makaleleri"]
   },
   {
     "name": "Fiverr",
     "type": "website",
-    "category": "Freelancing",
+    "category": "Freelance",
     "url": "fiverr.com",
     "usedInTR": true,
     "alternative": "Upwork, Freelancer, 99designs, Armut",
-    "reason": "Israeli-founded online marketplace for freelance services",
-    "description": "Freelance services marketplace",
-    "verificationStatus": "verified",
-    "sources": ["Company information", "Founder background"]
+    "reason": "İsrail kökenli serbest çalışan pazaryeri",
+    "description": "Serbest çalışan hizmetleri için çevrimiçi pazaryeri",
+    "verificationStatus": "doğrulandı",
+    "sources": ["Şirket bilgisi", "Kurucu geçmişi"]
   },
   {
     "name": "Natural Intelligence",
     "type": "website",
-    "category": "Comparison Shopping",
+    "category": "Fiyat Karşılaştırma",
     "url": "naturalint.com",
     "usedInTR": false,
     "alternative": "PriceGrabber, Shopping.com, Google Shopping",
-    "reason": "Israeli comparison shopping company",
-    "description": "Operates various price comparison and review websites",
-    "verificationStatus": "verified",
-    "sources": ["Company profile"]
+    "reason": "İsrail menşeli karşılaştırmalı alışveriş sitesi",
+    "description": "Fiyat karşılaştırması ve kullanıcı değerlendirmeleri içeren siteleri işletir",
+    "verificationStatus": "doğrulandı",
+    "sources": ["Şirket profili"]
   },
   {
     "name": "ironSource",
     "type": "platform",
-    "category": "Mobile Marketing",
+    "category": "Mobil Pazarlama",
     "url": "ironsrc.com",
     "usedInTR": false,
     "alternative": "Google AdMob, Unity Ads, AppLovin",
-    "reason": "Israeli mobile monetization and marketing platform",
-    "description": "Mobile app monetization and marketing solutions",
-    "verificationStatus": "verified",
-    "sources": ["Company information"]
+    "reason": "İsrail merkezli mobil gelirleme ve reklam platformu",
+    "description": "Uygulama geliştiricileri için reklam ve gelirleme çözümleri sunar",
+    "verificationStatus": "doğrulandı",
+    "sources": ["Şirket bilgisi"]
   }
 ]
